@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* NAVBAR STYLING */
+nav {
+  background-color: #fff !important;
+}
+.nav-link.active {
+  color: #1b2a49 !important;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 100ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: #1b2a49 !important;
+}
+
+.navbar-brand {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.toggler-div {
+  width: 27px;
+  height: 2px;
+  border-radius: 10px !important;
+  background-color: #555;
+
+  margin: 6px 0;
+  transition: 400ms ease-in-out;
+}
+
+.toggler-div.md {
+  width: 29px;
+}
+
+.toggler-div.lg {
+  width: 32px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-10px, -6px);
+}
+
+/* font weights */
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.carousel-item {
+  height: 100vh;
+  position: relative;
+  background: #000;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  object-fit: cover;
+}
+
+.rounded-4 {
+  border-radius: 6px !important;
+}
+
+.rounded-top {
+  border-radius: 6px 6px 0 0 !important;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#products .card img {
+  max-height: 200px;
+}
+
+#about h1,
+h3,
+#products h1,
+h3,
+#testimonial h1,
+h2,
+h4,
+h5,
+#contact-us h1,
+h2,
+h3 {
+  color: #2c394b !important;
+}
+
+.fs-1 {
+  font-size: 3rem !important;
+}
+
+.fs-2 {
+  font-size: 2rem !important;
+}
+
+.bg-prime {
+  background-color: #e2eaec;
+}
+
+.footer {
+  background-color: #2c394b;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #2c394b;
+  font-weight: 500;
+}
+
+#footer i {
+  color: #2c394b;
+}
+
+#footer i:hover {
+  color: #000;
+}
+
+.bb {
+  border-bottom: 2px solid #1b2a49;
+}
+
+.bg-prime-dark {
+  background-color: #1b2a49;
+}
+
+/* Back to top */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  z-index: 99;
+  padding: 16px 18px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
