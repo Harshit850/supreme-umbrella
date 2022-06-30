@@ -18,8 +18,12 @@ button {
 /* NAVBAR STYLING */
 nav {
   height: 80px;
-  background-color: #fff !important;
 }
+
+.bg-nav {
+  background-color: #fff5eb !important;
+}
+
 .nav-link.active {
   color: #1b2a49 !important;
   font-weight: 600;
@@ -45,9 +49,8 @@ nav {
   height: 2px;
   border-radius: 10px !important;
   background-color: #555;
-
   margin: 6px 0;
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .toggler-div.md {
@@ -156,7 +159,7 @@ h3 {
 }
 
 .bg-prime {
-  background-color: #faf0d7;
+  background-color: #fff5eb;
 }
 
 .bg-light {
@@ -207,6 +210,15 @@ h3 {
   outline: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.96) !important;
 }
 
 @media (max-width: 768px) {
