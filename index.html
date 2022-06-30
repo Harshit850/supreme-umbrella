@@ -73,9 +73,6 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#recents">Recent Uploads</a>
-            </li>
 
             <li class="nav-item mx-2">
               <a class="nav-link" href="#testimonial">Testimonials</a>
@@ -95,105 +92,75 @@
     </nav>
 
     <!-- header -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="images/car1.jpg" class="img-fluid" alt="" />
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="display-4 fw-600">Parivartan Classes</h1>
-              <p class="lead">
-                Your one-stop destination for learning and exploring
+    <header class="p-lg-5 p-md-2" id="hero">
+      <div class="container mb-4">
+        <div class="row g-4">
+          <div class="col-lg-5 col-md-6 my-auto">
+            <div class="text-center text-md-start flex-column">
+              <h1 class="display-5 fw-600">Parivartan Classes</h1>
+              <p class="lead fw-300 text-secondary">
+                Your one-stop destination for learning and exploring.
               </p>
-              <p>
-                <a class="btn btn-lg btn-outline-light rounded-0" href="#"
-                  >Know Our Vision</a
-                >
-              </p>
+              <a
+                href="#vision"
+                class="btn btn-dark btn-lg text-white shadow px-5"
+              >
+                Meet Our Instructors
+              </a>
             </div>
           </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/car2.jpg" class="img-fluid" alt="" />
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="display-4 fw-600">Parivartan Classes</h1>
-              <p class="lead">Where student's bright future comes first!</p>
-              <p>
-                <a class="btn btn-lg btn-outline-light rounded-0" href="#"
-                  >Meet Our Instructors</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/car3.jpg" class="img-fluid" alt="" />
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="display-4 fw-600">Parivartan Classes</h1>
-              <p class="lead">
-                People teach. People learn. This is where they connect.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-outline-light rounded-0" href="#"
-                  >Meet Our Alumni</a
-                >
-              </p>
+          <div class="col-lg-7 col-md-6">
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="images/one.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="images/two.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="images/three.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </header>
 
     <!-- Recent Upload -->
-    <section class="p-lg-5 p-md-2" id="recents">
-      <div class="container">
-        <h1 class="display-4 fw-600 text-center mt-5 mb-4 mt-lg-0">
-          Recent Uploads
+    <section class="p-lg-5 p-md-2 bg-prime" id="recents">
+      <div class="container py-1">
+        <h1 class="display-4 fw-500 text-center mt-5 mb-5 mt-lg-0">
+          Latest Uploads
         </h1>
         <div class="row text-center g-4">
           <div
@@ -203,7 +170,7 @@
           >
             <div class="card shadow text-dark text-warning rounded-4">
               <img
-                src="images/car1.jpg"
+                src="images/test1.jpg"
                 class="card-image-top img-fluid rounded-top"
               />
               <div class="card-body text-center">
@@ -226,7 +193,7 @@
           >
             <div class="card shadow text-dark text-warning rounded-4">
               <img
-                src="images/car3.jpg"
+                src="images/test2.jpg"
                 class="card-image-top img-fluid rounded-top"
               />
               <div class="card-body text-center">
@@ -250,7 +217,7 @@
           >
             <div class="card shadow text-dark text-warning rounded-4">
               <img
-                src="images/car2.jpg"
+                src="images/test3.jpg"
                 class="card-image-top img-fluid rounded-top"
               />
               <div class="card-body text-center">
@@ -270,14 +237,14 @@
         </div>
       </div>
       <div class="text-center my-3" data-aos="fade-up" data-aos-duration="900">
-        <div class="btn rounded-pill btn-dark px-5">View All</div>
+        <a href="#" class="btn rounded-pill btn-dark px-5 shadow">View All</a>
       </div>
     </section>
 
     <!-- About -->
-    <section class="p-lg-5 p-md-2 bg-prime" id="about">
+    <section class="p-lg-5 p-md-2" id="vision">
       <div class="container">
-        <h1 class="display-4 fw-600 text-center mt-5 mb-4 mt-lg-0">
+        <h1 class="display-4 fw-500 text-center mt-5 mb-4 mt-lg-0">
           Our Vision
         </h1>
 
@@ -289,19 +256,19 @@
         <div class="row text-center g-4">
           <div
             class="col-md-6 col-lg-4 mb-4"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="900"
           >
             <div class="card shadow text-dark text-warning rounded-4 p-3 pb-0">
               <div class="d-flex justify-content-center align-content-center">
-                <i class="fas fa-hand-holding-heart fs-1 mt-3"></i>
+                <i class="fa-regular fa-handshake fs-1 mt-3"></i>
               </div>
               <div class="card-body text-center">
                 <h3 class="card-title mt-2 fw-600 p-2">Collaboration</h3>
                 <p class="card-text text-secondary fw-500">
-                  Coaching is a collaborative process that not only creates
-                  results but increases well being and understanding between
-                  students.
+                  Collaboration allows teachers to capture each other's fund of
+                  collective intelligence. Coming together is a beginning.
+                  Keeping together is progress. Working together is success.
                 </p>
               </div>
             </div>
@@ -313,32 +280,33 @@
           >
             <div class="card shadow text-dark text-warning rounded-4 p-3 pb-0">
               <div class="d-flex justify-content-center align-content-center">
-                <i class="fas fa-bullseye fs-1 mt-3"></i>
+                <i class="fa-regular fa-circle-check fs-1 mt-3"></i>
               </div>
               <div class="card-body text-center">
                 <h3 class="card-title mt-2 fw-600 p-2">Quality Education</h3>
                 <p class="card-text text-secondary fw-500">
-                  Our values form the foundation of our company and are a true
-                  reflection of our beliefs and philosophy. Lorem, ipsum dolor
-                  sit amet consectetur adipisicing elit. Ea, vero?
+                  By providing every student with a quality education, and the
+                  materials they need for class and to do their homework, we can
+                  help students from all backgrounds learn and thrive.
                 </p>
               </div>
             </div>
           </div>
           <div
             class="col-md-6 col-lg-4 mb-4"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="900"
           >
             <div class="card shadow text-dark text-warning rounded-4 p-3 pb-0">
               <div class="d-flex justify-content-center align-content-center">
-                <i class="far fa-check-circle fs-1 mt-3"></i>
+                <i class="fa-solid fa-chart-line fs-1 mt-3"></i>
               </div>
               <div class="card-body text-center">
                 <h3 class="card-title mt-2 fw-600 p-2">Growing Skills</h3>
                 <p class="card-text text-secondary fw-500">
-                  We help students develop quality skills which are helpful in
-                  every phase of their life.
+                  We make sure that our students learn abilities that are
+                  crucial at any stage of life in addition to a strong academic
+                  record. One stands out from the crowd based on their skills.
                 </p>
               </div>
             </div>
@@ -347,118 +315,228 @@
       </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="p-lg-5 p-md-2" id="testimonial">
+    <!-- Features -->
+    <section class="p-lg-5 p-md-2 bg-light">
       <div class="container">
-        <h1 class="display-4 fw-600 text-center mt-5 mb-4 mt-lg-0">
+        <h1 class="display-4 fw-500 text-center mt-5 mb-4 mt-lg-0">
+          What We Offer
+        </h1>
+        <p class="text-secondary text-center lead">
+          <span class="fw-600">Parivartan</span>, its not just a name. Its what
+          we bring in each one of our student!
+        </p>
+
+        <div class="my-2 row g-4">
+          <div
+            class="col-lg-6 text-start"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <div class="card mb-3 rounded-3 rounded-5 shadow border-0">
+              <div class="row g-0">
+                <div class="col-3 d-flex align-content-center">
+                  <img
+                    src="images/book-stack.png"
+                    class="img-fluid rounded-start icon-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <h4 class="fw-600">Comprehensive Study Material</h4>
+                    <p class="card-text fw-400 text-secondary fs-6">
+                      Our most comprehensive study material is curated by
+                      subject matter experts that empowers you with an in-depth
+                      understanding of all crucial topics from various subjects
+                      to help you stay ahead of the curve.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 text-start"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <div class="card mb-3 rounded-3 rounded-5 shadow border-0">
+              <div class="row g-0">
+                <div class="col-3 d-flex align-content-center">
+                  <img
+                    src="images/record.png"
+                    class="img-fluid rounded-start icon-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <h4 class="fw-600">Excellent Track Record</h4>
+                    <p class="card-text fw-400 text-secondary fs-6">
+                      We have maintained an excellent track record for over
+                      three decades in delivering outstanding results in CBSE
+                      and ICSE board exams, and competitive exams every year.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 text-start"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <div class="card mb-3 rounded-3 rounded-5 shadow border-0">
+              <div class="row g-0">
+                <div class="col-3 d-flex align-content-center">
+                  <img
+                    src="images/test.png"
+                    class="img-fluid rounded-start icon-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <h4 class="fw-600">Periodic Tests</h4>
+                    <p class="card-text fw-400 text-secondary fs-6">
+                      At Parivartan Classes we conduct weekly test on the
+                      subjects being taught during the whole week. The tests
+                      consists of curated and hand picked quality problems by
+                      the subject teahcer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 text-start"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <div class="card mb-3 rounded-3 rounded-5 shadow border-0">
+              <div class="row g-0">
+                <div class="col-3 d-flex align-content-center">
+                  <img
+                    src="images/coaching.png"
+                    class="img-fluid rounded-start icon-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <h4 class="fw-600">Individual Attention to Each Student</h4>
+                    <p class="card-text fw-400 text-secondary fs-6">
+                      We teach limited number of students in each of our batch.
+                      With this we can easily monitor how a student is
+                      performing and what more needs to delivered from our end
+                      as well.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="p-lg-5 p-md-3" id="testimonial">
+      <div class="container">
+        <h1 class="display-4 fw-500 text-center mt-5 mb-4 mb-md-5 mt-lg-0">
           What our Students Say?
         </h1>
 
-        <div class="owl-carousel owl-theme mt-3 mt-lg-4 p-lg-3">
-          <div class="item" data-aos="fade-in" data-aos-duration="900">
-            <div class="card mb-3 shadow-sm rounded-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="images/user.png"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h4 class="card-title fw-500">Mr. Jasjeev Singh Bhasin</h4>
-                    <p class="card-text fw-400 text-secondary">
-                      “I envisage Mackspring to be the global leader in the
-                      leafspring industry via implementing global systems and
-                      bla bla.”
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                  </div>
-                </div>
+        <div class="owl-carousel owl-theme my-3 my-lg-5 p-lg-3">
+          <div class="item" data-aos="fade-up" data-aos-duration="900">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/10.jpg"
+                  class="rounded-circle mb-3"
+                  alt="person1"
+                />
+                <h4 class="fw-600 my-3">Naman Malik</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="item" data-aos="fade-in" data-aos-duration="900">
-            <div class="card mb-3 shadow-sm rounded-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="images/user.png"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h4 class="card-title fw-500">Mr. Jasjeev Singh Bhasin</h4>
-                    <p class="card-text fw-400 text-secondary">
-                      “I envisage Mackspring to be the global leader in the
-                      leafspring industry via implementing global systems and
-                      bla bla.”
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                  </div>
-                </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="900">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  class="rounded-circle mb-3"
+                  alt="person1"
+                />
+                <h4 class="fw-600 my-3">Naman Malik</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="item" data-aos="fade-in" data-aos-duration="900">
-            <div class="card mb-3 shadow-sm rounded-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="images/user.png"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h4 class="card-title fw-500">Mr. Jasjeev Singh Bhasin</h4>
-                    <p class="card-text fw-400 text-secondary">
-                      “I envisage Mackspring to be the global leader in the
-                      leafspring industry via implementing global systems and
-                      bla bla.”
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                  </div>
-                </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="900">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt="person1"
+                />
+                <h4 class="fw-600 my-3">Naman Malik</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="item" data-aos="fade-in" data-aos-duration="900">
-            <div class="card mb-3 shadow-sm rounded-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="images/user.png"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h4 class="card-title fw-500">Mr. Jasjeev Singh Bhasin</h4>
-                    <p class="card-text fw-400 text-secondary">
-                      “I envisage Mackspring to be the global leader in the
-                      leafspring industry via implementing global systems and
-                      bla bla.”
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                  </div>
-                </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="900">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/14.jpg"
+                  class="rounded-circle mb-3"
+                  alt="person1"
+                />
+                <h4 class="fw-600 my-3">Naman Malik</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="900">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/18.jpg"
+                  class="rounded-circle mb-3"
+                  alt="person1"
+                />
+                <h4 class="fw-600 my-3">Naman Malik</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
               </div>
             </div>
           </div>

@@ -1,26 +1,30 @@
-$('.owl-carousel').owlCarousel({
-  loop: false,
-  margin: 10,
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateOut: true,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
   nav: false,
   responsive: {
     0: {
       items: 1,
     },
     600: {
-      items: 1,
+      items: 2,
     },
     1000: {
-      items: 2,
+      items: 3,
     },
   },
 });
 AOS.init();
 
 function myFunction(x) {
-  x.classList.toggle('change');
+  x.classList.toggle("change");
 }
 
-var backToTop = document.getElementById('back-to-top');
+var backToTop = document.getElementById("back-to-top");
 console.log(backToTop);
 
 window.onscroll = function () {
@@ -32,8 +36,8 @@ function scrollFunction() {
     document.body.scrollTop > 200 ||
     document.documentElement.scrollTop > 250
   ) {
-    backToTop.style.display = 'block';
+    backToTop.style.display = "block";
   } else {
-    backToTop.style.display = 'none';
+    backToTop.style.display = "none";
   }
 }
