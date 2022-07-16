@@ -4,6 +4,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --orange: #ff8303;
+  --prime: #faefe5;
+  --white: #fff;
+  --bright-orange: #ffa500;
+  --light-yellow: #dcffef;
+}
+
 body::before {
   display: block;
   content: "";
@@ -15,28 +23,66 @@ button {
   border: none !important;
 }
 
+input,
+textarea {
+  box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #444 !important;
+}
+
+.bg-orange {
+  background-color: var(--orange) !important;
+}
+
+.mb-6 {
+  margin-bottom: 5rem !important;
+}
+
+/* font weights */
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
 /* NAVBAR STYLING */
 nav {
   height: 80px;
 }
 
 .bg-nav {
-  background-color: #fff5eb !important;
-}
-
-.nav-link.active {
-  color: #1b2a49 !important;
-  font-weight: 600;
+  background-color: var(--prime);
 }
 
 .nav-link {
   font-size: 1.1rem;
   font-weight: 500;
-  transition: color 100ms ease-in-out;
+  color: #333 !important;
+}
+
+.nav-link.active {
+  color: var(--orange) !important;
+  border-bottom: 3px solid var(--orange);
 }
 
 .nav-link:hover {
-  color: #1b2a49 !important;
+  color: var(--orange) !important;
 }
 
 .navbar-brand {
@@ -44,6 +90,7 @@ nav {
   max-width: 80px;
 }
 
+/* toggler navbar */
 .toggler-div {
   width: 27px;
   height: 2px;
@@ -75,127 +122,80 @@ nav {
   transform: rotate(45deg) translate(-10px, -6px);
 }
 
-/* font weights */
-.fw-300 {
-  font-weight: 300;
-}
-.fw-400 {
-  font-weight: 400;
+/* header */
+header {
+  height: 70vh;
 }
 
-.fw-500 {
-  font-weight: 500;
+.bg-header {
+  background-color: var(--prime);
 }
 
-.fw-600 {
-  font-weight: 600;
+.bg-bright-orange {
+  background-color: var(--bright-orange);
 }
 
-.w-40 {
-  width: 40%;
-}
-
-.carousel-item img {
-  height: 400px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-#recents .card img {
-  height: 300px;
-  object-fit: cover;
+.bb-prime {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--bright-orange);
 }
 
 .icon-img {
   height: 100px;
   width: 100px;
-  margin: auto;
 }
 
-.rounded-4 {
-  border-radius: 6px !important;
+/* testimonial */
+.bg-light-yellow {
+  background-color: var(--light-yellow);
 }
 
-.rounded-5 {
-  border-radius: 10px !important;
+.profile-img {
+  height: 80px !important;
+  width: 80px !important;
 }
 
-.rounded-top {
-  border-radius: 6px 6px 0 0 !important;
+.double-quote {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--orange);
 }
 
-.d-flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+/* Floating Animation */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  filter: drop-shadow(8px 8px 10px #fff);
 }
 
-#products .card img {
-  max-height: 200px;
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 18px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-#about h1,
-h3,
-#products h1,
-h3,
-#testimonial h1,
-h2,
-h4,
-h5,
-#contact-us h1,
-h2,
-h3 {
-  color: #2c394b !important;
+/* Footer */
+footer h5 {
+  padding-bottom: 4px;
+  border-bottom: 3px solid var(--bright-orange);
+}
+footer a {
+  text-decoration: none !important;
+  color: #333;
 }
 
-.fs-1 {
-  font-size: 3rem !important;
-}
-
-.fs-2 {
-  font-size: 2rem !important;
-}
-
-.bg-prime {
-  background-color: #fff5eb;
-}
-
-.bg-light {
-  background-color: #fafafa;
-}
-
-.footer {
-  background-color: #2c394b;
-}
-
-#testimonial .card img {
-  height: 200px;
-  width: 200px;
-  margin: auto;
-}
-
-#footer a {
-  text-decoration: none;
-  color: #2c394b;
-  font-weight: 500;
-}
-
-#footer i {
-  color: #2c394b;
-}
-
-#footer i:hover {
-  color: #000;
-}
-
-.bb {
-  border-bottom: 2px solid #1b2a49;
-}
-
-.bg-prime-dark {
-  background-color: #1b2a49;
+footer a:hover {
+  color: var(--orange);
 }
 
 /* Back to top */
@@ -222,9 +222,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  body::before {
-    display: block;
-    content: "";
-    height: 140px;
+  header {
+    height: 40vh;
   }
 }
