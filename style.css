@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -33,6 +32,14 @@ textarea:focus {
   border: 2px solid #444 !important;
 }
 
+.italic {
+  font-family: "Pacifico", cursive;
+}
+
+.mh-80 {
+  min-height: 80vh !important;
+}
+
 .bg-orange {
   background-color: var(--orange) !important;
 }
@@ -42,6 +49,9 @@ textarea:focus {
 }
 
 /* font weights */
+.fw-100 {
+  font-weight: 100;
+}
 .fw-300 {
   font-weight: 300;
 }
@@ -219,6 +229,18 @@ footer a:hover {
 
 .btn:hover {
   transform: scale(0.96) !important;
+}
+
+/* blog img */
+.blog-img {
+  height: 300px !important;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px !important;
+}
+
+.rounded-5 {
+  border-radius: 10px !important;
 }
 
 @media (max-width: 768px) {
