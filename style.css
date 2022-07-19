@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
+}
+
+.italic {
+  font-family: "Satisfy", cursive;
 }
 
 :root {
@@ -9,6 +15,7 @@
   --white: #fff;
   --bright-orange: #ffa500;
   --light-yellow: #dcffef;
+  --pale: #f7f7f7;
 }
 
 body::before {
@@ -32,12 +39,20 @@ textarea:focus {
   border: 2px solid #444 !important;
 }
 
-.italic {
-  font-family: "Pacifico", cursive;
-}
-
 .mh-80 {
   min-height: 80vh !important;
+}
+
+.mh-50 {
+  max-height: 50vh !important;
+}
+
+.mh-50 img {
+  max-height: 300px !important;
+}
+
+.bg-prime {
+  background-color: #fafafa;
 }
 
 .bg-orange {
@@ -179,7 +194,7 @@ header {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 30px;
-  filter: drop-shadow(8px 8px 10px #fff);
+  filter: drop-shadow(10px 10px 12px #fff);
 }
 
 @keyframes floating {
@@ -241,6 +256,24 @@ footer a:hover {
 
 .rounded-5 {
   border-radius: 10px !important;
+}
+
+/* Blog Section */
+#blog-section a {
+  padding: 16px 30px;
+}
+
+#blog-section .nav-item {
+  border: none !important;
+}
+
+#blog-section a {
+  background-color: var(--pale);
+}
+
+#blog-section a.active {
+  color: var(--bright-orange) !important;
+  background-color: var(--white) !important;
 }
 
 @media (max-width: 768px) {
