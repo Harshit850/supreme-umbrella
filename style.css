@@ -258,6 +258,23 @@ footer a:hover {
   border-radius: 10px !important;
 }
 
+/* nav-horizontal */
+div.nav-horizontal {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-horizontal p {
+  width: 250px;
+}
+
+.nav-horizontal a {
+  font-size: 0.8rem !important;
+}
+
 /* Blog Section */
 #blog-section a {
   padding: 16px 30px;
@@ -279,5 +296,8 @@ footer a:hover {
 @media (max-width: 768px) {
   header {
     height: 40vh;
+  }
+  .mh-50 {
+    max-height: 40vh !important;
   }
 }
