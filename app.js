@@ -20,12 +20,37 @@ $(".owl-carousel").owlCarousel({
 });
 AOS.init();
 
+// Blog navs
+let blogNav = document.querySelector(".nav-horizontal");
+let links = document.querySelectorAll(".nav-horizontal .nav-item .nav-link");
+let blogs = document.querySelectorAll(".blog-posts");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    // remove active from all the divs
+    links.forEach((element) => {
+      element.classList.remove("active");
+    });
+
+    // handle display for blogs
+    blogs.forEach((blog) => {
+      if (blog.dataset.id === link.dataset.id) {
+        blog.classList.remove("d-none");
+      } else {
+        blog.classList.add("d-none");
+      }
+    });
+
+    // add active on current item
+    link.classList.add("active");
+  });
+});
+
 function myFunction(x) {
   x.classList.toggle("change");
 }
 
 var backToTop = document.getElementById("back-to-top");
-console.log(backToTop);
 
 window.onscroll = function () {
   scrollFunction();
@@ -37,7 +62,13 @@ function scrollFunction() {
     document.documentElement.scrollTop > 250
   ) {
     backToTop.style.display = "block";
+    document.querySelector(".navbar").classList.add("d-none");
+    blogNav.classList.add("shadow-sm");
+    blogNav.classList.add("at-top");
   } else {
     backToTop.style.display = "none";
+    document.querySelector(".navbar").classList.remove("d-none");
+    blogNav.classList.remove("shadow-sm");
+    blogNav.classList.remove("at-top");
   }
 }

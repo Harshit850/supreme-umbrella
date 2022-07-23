@@ -24,6 +24,10 @@ body::before {
   height: 80px;
 }
 
+body {
+  position: relative;
+}
+
 button {
   box-shadow: none !important;
   border: none !important;
@@ -264,33 +268,48 @@ div.nav-horizontal {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 500px;
+  width: 600px;
+  text-align: center;
+  background-color: var(--pale) !important;
 }
 
 .nav-horizontal p {
   width: 250px;
 }
 
-.nav-horizontal a {
+.nav-horizontal span {
   font-size: 0.8rem !important;
 }
 
 /* Blog Section */
-#blog-section a {
-  padding: 16px 30px;
+#blog-section span {
+  background-color: var(--pale);
+  padding: 16px 20px;
 }
 
 #blog-section .nav-item {
+  cursor: pointer;
   border: none !important;
 }
 
-#blog-section a {
-  background-color: var(--pale);
-}
-
-#blog-section a.active {
+#blog-section span.active {
   color: var(--bright-orange) !important;
   background-color: var(--white) !important;
+}
+
+.nav-horizontal.at-top {
+  position: fixed;
+  top: -6px;
+  width: 100vw !important;
+  z-index: 9999999;
+  text-align: center;
+  background-color: var(--prime) !important;
+}
+
+.nav-horizontal.at-top span {
+  background-color: var(--prime) !important;
+  padding: 28px 20px !important;
+  font-size: 14px !important;
 }
 
 @media (max-width: 768px) {
