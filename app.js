@@ -62,13 +62,17 @@ function scrollFunction() {
     document.documentElement.scrollTop > 250
   ) {
     backToTop.style.display = "block";
-    document.querySelector(".navbar").classList.add("d-none");
-    blogNav.classList.add("shadow-sm");
-    blogNav.classList.add("at-top");
+    if (blogNav) {
+      document.querySelector(".navbar").classList.add("d-none");
+      blogNav.classList.add("shadow-sm");
+      blogNav.classList.add("at-top");
+    }
   } else {
     backToTop.style.display = "none";
-    document.querySelector(".navbar").classList.remove("d-none");
-    blogNav.classList.remove("shadow-sm");
-    blogNav.classList.remove("at-top");
+    if (blogNav) {
+      document.querySelector(".navbar").classList.remove("d-none");
+      blogNav.classList.remove("shadow-sm");
+      blogNav.classList.remove("at-top");
+    }
   }
 }
