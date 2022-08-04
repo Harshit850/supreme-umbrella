@@ -268,7 +268,7 @@ div.nav-horizontal {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 600px;
+  /* width: 600px; */
   text-align: center;
   background-color: var(--pale) !important;
 }
@@ -310,6 +310,12 @@ div.nav-horizontal {
   background-color: var(--prime) !important;
   padding: 28px 20px !important;
   font-size: 14px !important;
+}
+
+/* Instructor */
+.instructor-img {
+  height: 200px;
+  width: 200px;
 }
 
 @media (max-width: 768px) {
