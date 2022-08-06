@@ -15,6 +15,7 @@
   --white: #fff;
   --bright-orange: #ffa500;
   --light-yellow: #dcffef;
+  --active-link: #ffb26a;
   --pale: #f7f7f7;
 }
 
@@ -301,24 +302,11 @@ div.nav-horizontal {
   border: none !important;
 }
 
-#blog-section span.active {
-  color: var(--bright-orange) !important;
-  background-color: var(--white) !important;
-}
-
-.nav-horizontal.at-top {
-  position: fixed;
-  top: -6px;
-  width: 100vw !important;
-  z-index: 9999999;
-  text-align: center;
-  background-color: var(--prime) !important;
-}
-
-.nav-horizontal.at-top span {
-  background-color: var(--prime) !important;
-  padding: 28px 20px !important;
-  font-size: 14px !important;
+#blog-section span.active,
+.dropdown-item.active,
+.dropdown-item:hover {
+  color: var(--white) !important;
+  background-color: var(--active-link) !important;
 }
 
 /* Instructor */

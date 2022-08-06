@@ -20,31 +20,40 @@ $(".owl-carousel").owlCarousel({
 });
 AOS.init();
 
+var dropdown = document.querySelector(".dropdown-toggle");
+if (dropdown && !dropdown.classList.contains("active")) {
+  $(".navbar-nav > li > .dropdown-toggle").click(function () {
+    window.location = $(this).attr("href");
+  });
+}
+
 // Blog navs
 let blogNav = document.querySelector(".nav-horizontal");
-let links = document.querySelectorAll(".nav-horizontal .nav-item .nav-link");
+let links = document.querySelectorAll(".nav-horizontal .dropdown-item");
 let blogs = document.querySelectorAll(".blog-posts");
 
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    // remove active from all the divs
-    links.forEach((element) => {
-      element.classList.remove("active");
-    });
+if (links != null) {
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      // remove active from all the divs
+      links.forEach((element) => {
+        element.classList.remove("active");
+      });
 
-    // handle display for blogs
-    blogs.forEach((blog) => {
-      if (blog.dataset.id === link.dataset.id) {
-        blog.classList.remove("d-none");
-      } else {
-        blog.classList.add("d-none");
-      }
-    });
+      // handle display for blogs
+      blogs.forEach((blog) => {
+        if (blog.dataset.id === link.dataset.id) {
+          blog.classList.remove("d-none");
+        } else {
+          blog.classList.add("d-none");
+        }
+      });
 
-    // add active on current item
-    link.classList.add("active");
+      // add active on current item
+      link.classList.add("active");
+    });
   });
-});
+}
 
 function myFunction(x) {
   x.classList.toggle("change");
@@ -62,17 +71,7 @@ function scrollFunction() {
     document.documentElement.scrollTop > 250
   ) {
     backToTop.style.display = "block";
-    if (blogNav) {
-      document.querySelector(".navbar").classList.add("d-none");
-      blogNav.classList.add("shadow-sm");
-      blogNav.classList.add("at-top");
-    }
   } else {
     backToTop.style.display = "none";
-    if (blogNav) {
-      document.querySelector(".navbar").classList.remove("d-none");
-      blogNav.classList.remove("shadow-sm");
-      blogNav.classList.remove("at-top");
-    }
   }
 }

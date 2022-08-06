@@ -63,7 +63,7 @@
           <div class="toggler-div md bar3"></div>
         </button>
         <div
-          class="collapse navbar-collapse bg-nav p-3"
+          class="collapse navbar-collapse bg-nav p-3 w-100"
           id="navbarSupportedContent"
           style="z-index: 99999"
         >
@@ -73,9 +73,45 @@
                 >Home</a
               >
             </li>
-
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="index.html#testimonial">Blog</a>
+            <li class="nav-item mx-2 dropdown nav-horizontal">
+              <a
+                class="nav-link dropdown-toggle"
+                href="blog.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#" data-id="Recent">Recent</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-id="funtime"
+                    >Fun Time</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-id="classIX"
+                    >Class IX</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-id="classX">Class X</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-id="classXI"
+                    >Class XI</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-id="classXII"
+                    >Class XII</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="instructors.html">Instructors</a>
