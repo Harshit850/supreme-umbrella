@@ -1,3 +1,18 @@
+$(".blog-images-slider .owl-carousel").owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateOut: true,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
+  nav: false,
+  lazyLoad: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 20,
@@ -18,6 +33,7 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
 AOS.init();
 
 var dropdown = document.querySelector(".dropdown-toggle");
